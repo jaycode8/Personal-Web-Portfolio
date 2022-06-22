@@ -1,0 +1,15 @@
+.main{
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    overflow: auto;
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+    background: #121212;
+}
+/* .rows{
+    width: 100%;
+    position: relative;
+    height: 100%;
+    scroll-snap-align: start;
+} */

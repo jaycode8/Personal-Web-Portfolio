@@ -1,0 +1,275 @@
+.edu{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+.edu h3{
+    cursor: pointer;
+    color: #f2c633;
+}
+.edu h3::after{
+    content: '';
+    width: 30%;
+    height: 5px;
+    background-color: #ff1616;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    margin-top: 7px;
+    transition: 1s;
+}
+.edu h3:hover::after{
+    width: 100%;
+}
+.edu span{
+    margin-right: 20px;
+    font-family: 'Rampart One', cursive;
+}
+
+.maincard{
+    width: 100%;
+    height: 50%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    align-content: center;
+    justify-content: center;
+    column-gap: 10px;
+    margin-top: 3%;
+    padding: 0 8px;
+}
+.educard{
+    width: 420px;
+    height: 180px;
+    border-radius: 20px;
+    /* box-shadow: inset 0 0 10px #00ccff; */
+    box-shadow: inset 0 0 10px #fff;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    cursor: pointer;
+}
+.educard a{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    display: flex;
+    margin: 0%;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    /* color: #555; */
+}
+.educard .img{
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    margin-left: 10px;
+    box-shadow:  0 0 10px #00ccff;
+}
+.educard .img img{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+}
+.educard .schooldetails{
+    margin-left: 10px;
+    padding: 10px 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    align-items: center;
+    justify-content: center;
+}
+.studyTime{
+    color: #ff1616;
+    font-family: 'Merienda', cursive;
+}
+.schooldetails h5{
+    font-family: Cookie, cursive;
+    font-size: 22px;
+    color: rgb(109, 246, 12);
+}
+.program{
+    color: #fff;
+    font-family: 'Merienda', cursive;
+}
+
+
+/* ================================Responsiveness========================= */
+@media screen and (max-width:1510px){
+    .educard{
+        width: 450px;
+        height: 200px;
+    }
+}
+
+@media screen and (max-width:1440px){
+    .educard{
+        width: unset;
+    }
+}
+
+@media screen and (max-width:1210px){
+    .maincard{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 20px;
+        width: 90%;
+    }
+    .educard{
+        height: 140px;
+    }
+    .educard .img{
+        width: 130px;
+        height: 130px;
+    }
+    .schooldetails h5{
+        font-size: 20px;
+    }
+    .schooldetails p{
+        font-size: 17px;
+    }
+}
+
+@media screen and (max-width:1110px){
+    .educard{
+        height: 135px;
+    }
+    .educard .img{
+        width: 110px;
+        height: 110px;
+    }
+    .schooldetails h5{
+        font-size: 19px;
+    }
+    .schooldetails p{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:1010px){
+    .maincard{
+        width: 90%;
+    }
+    .schooldetails h5{
+        font-size: 16px;
+    }
+    .schooldetails p{
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .maincard{
+        width: 100%;
+    }
+    .educard{
+        width: unset;
+    }
+    .schooldetails h5{
+        font-size: 16px;
+    }
+    .schooldetails p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:760px){
+    .maincard{
+        grid-template-columns: repeat(2,1fr);
+        row-gap: 20px;
+        height: auto;
+        width: 98%;
+    }
+    .educard{
+        height: 130px;
+    }
+    .educard .img{
+        width: 100px;
+        height: 100px;
+    }
+    .schooldetails h5{
+        font-size: 15px;
+    }
+    .schooldetails p{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-width:680px){
+    .maincard{
+        width: 100%;
+    }
+    .educard{
+        height: 150px;
+    }
+    .educard .img{
+        width: 100px;
+        height: 100px;
+    }
+    .schooldetails h5{
+        font-size: 17px;
+    }
+    .schooldetails p{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:640px){
+    .maincard{
+        grid-template-columns: repeat(1,1fr);
+        width: 70%;
+    }
+    .educard{
+        width: 100%;
+        height: 160px;
+    }
+}
+
+@media screen and (max-width:570px){
+    .maincard{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .maincard{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:440px){
+    .maincard{
+        width: 95%;
+    }
+    .educard{
+        height: 130px;
+    }
+    .educard .img{
+        width: 100px;
+        height: 100px;
+    }
+    .schooldetails h5{
+        font-size: 15px;
+    }
+    .schooldetails p{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:350px){
+    .maincard{
+        width: 100%;
+    }
+    .schooldetails h5{
+        font-size: 13px;
+    }
+    .schooldetails p{
+        font-size: 10px;
+    }
+}
+
+

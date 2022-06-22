@@ -1,0 +1,23 @@
+.bioDetails{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    padding-top: 3%;
+}
+.bioDetails h1{
+    font-family: 'Rampart One', cursive;
+    color: #f2c633;
+}
+.fineDetails{
+    height: auto;
+    width: 100%;
+    padding: 0 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    overflow-x: hidden;
+}

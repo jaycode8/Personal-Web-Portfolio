@@ -1,0 +1,199 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+:root{
+    --fcolour: #fff;
+    --navbg: rgba(0, 0, 0, 0.912);
+    --lifontcolor: ;
+    --linkhover: #cf6c14;
+    --nav2bg:#2f3640;
+    --linkhover2: red;
+}
+.nav-bar{
+    position: fixed;
+    top: -4px;
+    left: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 5px;
+    padding-bottom: -5px;
+    z-index: 1;
+    background-color: var(--navbg);
+}
+.logo{
+    margin-left: 3%;
+}
+.logo h1{
+    color: var(--fcolour);
+    font-size: 30px;
+    font-family: 'Righteous', cursive;
+}
+.logo h1 span{
+    color: red;
+}
+nav{
+    flex: 1;
+    padding-left: 6px;
+}
+nav ul{
+    margin-right: 40px;
+    float: right;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+nav ul li{
+    display: inline-block;
+    list-style: none;
+    font-size: 20px;
+    text-transform: uppercase;
+    transition: all 1s ease-in-out;
+}
+a{
+    text-decoration: none;
+    margin: 0 20px;
+    color: var(--fcolour);
+    font-family: 'Merienda', cursive;
+    transition: all 1s ease-in-out;
+}
+nav ul li::after{
+    content: '';
+    background: var(--linkhover);
+    width: 0%;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: .8s;
+}
+nav ul li:hover::after{
+    width: 100%;
+}
+nav ul a li:hover{
+    color: var(--linkhover);
+    /* text-decoration: underline; */
+}
+nav ul a.active li{
+    color: var(--linkhover);
+    text-decoration: underline;
+}
+.nav #navbtn{
+    color: var(--fcolour);
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+.nav #navbtn2{
+    color: var(--fcolour);
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-size: 28px;
+    cursor: pointer;
+    display: none;
+}
+
+
+
+
+/* ===================Responsiveness========================== */
+
+@media only screen and (max-width:910px){
+    /* .logo h1{
+        font-size: 25px;
+    } */
+    nav ul li{
+        font-size: 20px;
+    }
+}
+
+@media only screen and (max-width:910px){
+    .logo h1{
+        font-size: 25px;
+    }
+    nav ul{
+        margin-right: 10px;
+    }
+}
+
+@media only screen and (max-width:770px){
+    nav ul{
+        margin-right: 5px !important;
+    }
+    a{
+        margin: 0 10px;
+    }
+}
+
+@media only screen and (max-width:715px){
+    nav ul{
+        margin-right: 10px;
+    }
+    nav ul li{
+        font-size: 15px;
+    }
+}
+
+@media only screen and (max-width:600px){
+    .nav #navbtn{
+        display: block;
+    }
+    .nav #navbtn2{
+        display: block;
+    }
+    .logo h1{
+        font-size: 30px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+    #nav{
+        width: 100%;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 1;
+        position: absolute;
+        /* background-color: var(--nav2bg); */
+        right: -100%;
+        top: 5%;
+        text-align: center;
+        transition: all 2s;
+    }
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+        margin: 0;
+        background-color: #cf6c14;
+    }
+    nav ul li{
+        display: block;
+        margin: 30px 0;
+        font-size: 20px;
+    }
+    nav ul a li:hover{
+        color: var(--linkhover2);
+    }
+    nav ul a.active li{
+        color: var(--linkhover2);
+        text-decoration: underline;
+    }
+    #nav.navshow{
+        right: 0%;
+        z-index: 1;
+    }
+}
+
+@media only screen and (max-width:400px){
+    .logo h1{
+        font-size: 25px;
+    }
+}

@@ -1,0 +1,280 @@
+.aboutpage{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    background-attachment: fixed;
+}
+.Cards{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.Cards h1{
+    cursor: pointer;
+    font-family: 'Rampart One', cursive;
+    font-size: 33px;
+    color: #f2c633;
+}
+.Cards h1::after{
+    content: '';
+    width: 30%;
+    height: 5px;
+    background-color: #ff1616;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    margin-top: 7px;
+    transition: 1s;
+}
+.Cards h1:hover::after{
+    width: 100%;
+}
+.card{
+    width: 70%;
+    height: 500px;
+    box-shadow: 0 0 10px 0 #fff;
+    background: transparent;
+    color: #ccc;
+    margin-top: 10px;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: all 1s;
+}
+.card:hover{
+    box-shadow: 0 0 10px 0 #00ccff;
+}
+.card div{
+    width: 50%;
+}
+.card .fullimg{
+    height: 100%;
+    position: absolute;
+    left: 0;
+    background: url('./images/jay3.jpg');
+    background-position: 100% 10% !important;
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    cursor: pointer;
+}
+.card .abouttext{
+    position: absolute;
+    right: 0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: 'Merienda', cursive;
+}
+.abouttext div{
+    width: 100%;
+    padding: 0 20px;
+}
+.abouttext p{
+    padding: 0 20px;
+}
+.abouttext .homebtn .one{
+    /* color: black; */
+    transition: all 1s ease;
+}
+.servlist ul li{
+    list-style: none;
+}
+
+
+
+/* ================================Responsiveness========================= */
+@media screen and (max-width:1510px){
+    .abouttext .homebtn button{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:1285px){
+    .abouttext .homebtn button{
+        width: 35%;
+    }
+}
+
+@media screen and (max-width:1210px){
+    .card{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:910px){
+    .abouttext .homebtn button{
+        width: 40%;
+    }
+    .card{
+        width: 98%;
+    }
+}
+
+@media screen and (max-width:780px){
+    .aboutpage{
+        height: auto !important;
+        padding: 10% 0;
+    }
+    .card{
+        height: 70vh;
+        width: 80%;
+    }
+    .card div{
+        width: 100%;
+    }
+    .card .fullimg{
+        background: linear-gradient(rgba(0,0,0,0.6), rgba(0,0,0,0.6)),url('./images/jay3.jpg');
+        background-position: center;
+        border-radius: 20px;
+        background-size: cover;
+    }
+    .abouttext{
+        color: var(--licolor);
+    }
+    .abouttext p{
+        font-size: 25px;
+    }
+    .abouttext h3{
+        font-size: 30px;
+    }
+    .abouttext ul li{
+        font-size: 25px;
+    }
+    .abouttext .homebtn{
+        margin: 0% !important;
+    }
+    .abouttext .homebtn button{
+        width: 40%;
+    }
+    .abouttext .homebtn a{
+        font-size: 22px;
+    }
+    .abouttext .homebtn .one{
+        color: unset;
+    }
+}
+
+@media screen and (max-width:640px){
+    .card{
+        width: 90%;
+    }
+}
+
+@media screen and (max-width:550px){
+    .card{
+        height: 78vh;
+        width: 98%;
+    }
+}
+
+@media screen and (max-width:520px){
+    .card{
+        height: 75vh;
+        width: 97%;
+    }
+    .abouttext p{
+        font-size: 25px;
+    }
+    .abouttext h3{
+        font-size: 28px;
+    }
+    .abouttext ul li{
+        font-size: 24px;
+    }
+    .abouttext .homebtn{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .abouttext .homebtn button{
+        width: 80vw;
+        margin: 10px 0;
+        height: 40px;
+        margin-right: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .abouttext div{
+        padding: 0 10px;
+    }
+    .abouttext p{
+        padding: 0 10px;
+    }
+}
+
+@media screen and (max-width:480px){
+    .Cards{
+        height: 90vh;
+    }
+    .aboutpage{
+        padding: 10%  0 !important;
+    }
+    .card{
+        width: 94%;
+        height: 90%;
+    }
+    .abouttext div{
+        padding: 0 2px;
+    }
+    .abouttext p{
+        font-size: 23px;
+    }
+    .abouttext h3{
+        font-size: 25px;
+    }
+    .abouttext ul li{
+        font-size: 21px;
+    }
+    .aboutpage{
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:450px){
+    .abouttext p{
+        font-size: 20px;
+    }
+    .servlist h3{
+        font-size: 19px;
+    }
+    .servlist ul li{
+        font-size: 15px;
+    }
+}
+
+@media screen and (max-width:360px){
+    .aboutpage{
+        height: auto !important;
+        padding: 20px 0;
+    }
+    .Cards{
+        height: 500px;
+    }
+    .card{
+        height: 100%;
+    }
+    .abouttext p{
+        font-size: 14px;
+    }
+    .servlist h3{
+        font-size: 13px;
+    }
+    .servlist ul li{
+        font-size: 10px;
+    }
+    .abouttext .homebtn button{
+        font-size: 12px;
+        width: 70vw;
+        height: 25px;
+    }
+}
+

@@ -1,0 +1,102 @@
+.languages{
+    width: 100%;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-direction: column;
+    margin: 10% 0;
+}
+.languages h3{
+    cursor: pointer;
+    color: #f2c633;
+}
+.languages h3::after{
+    content: '';
+    width: 30%;
+    height: 5px;
+    background-color: #ff1616;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    margin-top: 7px;
+    transition: 1s;
+}
+.languages h3:hover::after{
+    width: 100%;
+}
+.languages span{
+    margin-right: 20px;
+    font-family: 'Rampart One', cursive;
+}
+.Bars{
+    width: 100%;
+    height: auto;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(4,1fr);
+    row-gap: 20px;
+    padding-left: 20px;
+    margin-top: 3%;
+}
+.langcontainer{
+    height:5px;
+    width:98%;
+    /* box-shadow: 0 0 10px #00ccff; */
+    box-shadow: inset 0 0 10px #fff;
+    border-radius:10px;
+    margin:50;
+    cursor: pointer;
+}
+.innerlang{
+    height: 100%;
+    border-radius: inherit;
+    text-align: right;
+}
+.Bars label{
+    margin-bottom: 10px;
+    font-family: 'Merienda', cursive;
+    color: #ccc;
+}
+
+
+
+
+
+/* ================================Responsiveness========================= */
+@media screen and (max-width:1010px){
+    .Bars{
+        padding-left: 20px;
+    }
+}
+
+@media screen and (max-width:900px){
+    .Bars{
+        grid-template-columns: repeat(3,1fr);
+        padding-left: 10px;
+        column-gap: 10px;
+    }
+}
+
+@media screen and (max-width:600px){
+    .Bars{
+        grid-template-columns: repeat(2,1fr);
+        padding: 0 auto;
+    }
+    .Bars label{
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .Bars label{
+        font-size: 11px;
+    }
+}
+
+@media screen and (max-width:200px){
+    .Bars{
+        grid-template-columns: repeat(1,1fr);
+        padding: 0 auto;
+    }
+}

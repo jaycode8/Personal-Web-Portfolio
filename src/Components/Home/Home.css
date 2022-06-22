@@ -1,0 +1,223 @@
+
+:root{
+    --backbg: url('./images/jay.png');
+    --docimgbg2: url('./images/bg3.jpg');
+    --buttonbg: #cf6c14;
+    --buttonhover: #f2c633;
+    --licolor: #fff;
+    --bg: #00ccff;
+    --clr: rgb(9, 248, 9);
+}
+.bag{
+    width: 100%;
+    height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),var(--docimgbg2);
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+.jaypic{
+    width: 380px;
+    height: 380px;
+    border-radius: 50%;
+    box-shadow: 0 2px 0px var(--bg);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    animation: animate 4s linear infinite;
+}
+@keyframes animate{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(360deg);
+    }
+}
+.jaypic .image{
+    height: 92%;
+    width: 92%;
+    background: var(--backbg);
+    background-position: center;
+    background-size: cover;
+    border-radius: 50%;
+    cursor: pointer;
+    background-repeat: no-repeat;
+    animation: animate2 4s linear infinite;
+}
+@keyframes animate2{
+    0%{
+        transform: rotate(0deg);
+    }
+    100%{
+        transform: rotate(-360deg);
+    }
+}
+.jaypic .image:hover{
+    transform: scale(1.07);
+    transition: 1s ease;
+}
+.homebtn{
+    margin-top: 10%;
+    width: 100%;
+}
+.homebtn button{
+    width: 270px;
+    padding: 10px 0;
+    border: none;
+    outline: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-family: 'Dosis', sans-serif;
+    transition: all 1s ease;
+}
+a .one{
+    background: transparent;
+    border: 1px solid var(--buttonhover);
+    color: var(--licolor);
+}
+a .two{
+    background-color: var(--buttonbg);
+}
+.homebtn button:hover{
+    background-color: var(--buttonhover);
+    color: var(--licolor);
+    border: none;
+    box-shadow: 0 0 35px var(--clr);
+}
+.socials{
+    position: absolute;
+    right: 0%;
+}
+.socials a{
+    color: var(--buttonhover);
+}
+.greetings{
+    font-family: 'Handlee', cursive;
+}
+.jay{
+    font-family: 'Rampart One', cursive;
+}
+.textloop{
+    font-family: 'Sofia', cursive;
+}
+
+
+
+/* ================================Responsiveness========================= */
+@media screen and (max-width:1310px){
+    .homebtn button{
+        width: 40%;
+    }
+}
+
+@media screen and (max-width:1210px){
+    .homebtn button{
+        width: 40%;
+    }
+}
+@media screen and (max-width:1010px) {
+    .homebtn button{
+        width: 170px;
+    }
+    .jaypic{
+        width: 360px;
+        height: 360px;
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width:910px) {
+    .homebtn a{
+        margin-left: auto;
+    }
+    .homebtn button{
+        width: 40%;
+    }
+    .jaypic{
+        width: 340px;
+        height: 340px;
+        margin-right: 30px;
+    }
+}
+
+@media screen and (max-width:810px){
+    .jaypic{
+        width: 330px;
+        height: 330px;
+        margin-right: 40px;
+    }
+}
+
+@media screen and (max-width:768px){
+    .details{
+        padding-top: 5%;
+    }
+    .homebtn{
+        margin-top: 0%;
+    }
+    .homebtn a{
+        margin-left: 20px;
+    }
+    .homebtn button{
+        width: 38%;
+    }
+}
+
+@media screen and (max-width:610px){
+    .homebtn{
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width:424px){
+    .homebtn a{
+        margin-left: auto;
+    }
+    .jaypic{
+        width: 310px;
+        height: 310px;
+    }
+}
+
+@media screen and (max-width:370px){
+    .jaypic{
+        width: 280px;
+        height: 280px;
+    }
+}
+
+@media screen and (max-width:350px){
+    .bag{
+        overflow-y: scroll;
+    }
+    .jaypic{
+        width: 200px;
+        height: 200px;
+    }
+    .socials{
+        right: -2%;
+    }
+    .homebtn button{
+        width: 40%;
+        height: 30px;
+        padding: 0%;
+        font-size: 11px;
+    }
+    .welkam{
+        margin-top: 10%;
+    }
+    .socials{
+        margin-top: -40%;
+    }
+
+}
+
+@media screen and (max-width:300px){
+    .jaypic{
+        width: 80%;
+        height: 50%;
+    }
+}

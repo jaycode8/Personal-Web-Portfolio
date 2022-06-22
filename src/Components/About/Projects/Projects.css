@@ -1,0 +1,304 @@
+.projects{
+    width: 100vw;
+    height: auto;
+    padding-bottom: 3%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 40px;
+}
+.projects h3{
+    cursor: pointer;
+    font-family: 'Rampart One', cursive;
+    color: #f2c633;
+}
+.projects h3::after{
+    content: '';
+    width: 30%;
+    height: 5px;
+    background-color: #ff1616;
+    display: block;
+    margin: auto;
+    border-radius: 50px;
+    margin-top: 7px;
+    transition: 1s;
+}
+.projects h3:hover::after{
+    width: 100%;
+}
+.projects .projectCards{
+    width: 80%;
+    height: 100%;
+    padding: 10px 0px;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 30px 0px;
+    align-content: center;
+    justify-content: center;
+    justify-self: center;
+    margin-top: 30px;
+}
+.projectCards a{
+    background-position: center;
+    background-size: cover;
+    color: #555;
+    width: 90%;
+    height: 210px;
+    box-shadow: inset 0 0 10px #00ccff;
+    border-radius: 10px;
+    transition: all 1s ease;
+}
+.projectCards a:hover{
+    background-color: rgba(0, 0, 0, 0.7);
+    background-blend-mode: darken;
+}
+.projects .kamoja{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    padding: 10px;
+    border-radius: 10px;
+    font-family: 'Merienda', cursive;
+}
+.projects .kamoja .date{
+    background: yellow;
+    width: 100%;
+    height: 20px !important;
+    padding: 10px !important;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 3px;
+    color: #121212;
+}
+.ray{
+    height: 80%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    opacity: 0;
+    transition: all 1.3s ease-in;
+}
+.projectCards a:hover .ray{
+    opacity: 1;
+}
+.title{
+    margin: 10px 0;
+    text-align: center;
+    color: #ccc;
+}
+
+
+/* ================================Responsiveness========================= */
+@media screen and (max-width:1500px){
+    .projects .projectCards{
+        grid-template-columns: repeat(3,1fr);
+        width: 100vw !important;
+    }
+    .projects .kamoja .date{
+        padding: 0px ;
+    }
+}
+
+@media screen and (max-width:1350px){
+    
+}
+
+@media screen and (max-width:1210px){
+    
+}
+
+@media screen and (max-width:1010px){
+    .projects .projectCards{
+        margin: 0 auto !important;
+    }
+    .projectCards a{
+        width: 96%;
+        height: 170px;
+        margin-left: 5px;
+    }
+}
+
+@media screen and (max-width:910px){
+    .projects .projectCards{
+        gap: -30px;
+    }
+}
+
+@media screen and (max-width:850px){
+    .projectCards a{
+        width: 95%;
+        height: 140px;
+        margin-left: 2%;
+    }
+    .projects .kamoja .date{
+        padding: 0%;
+        font-size: 14px;
+        height: 10px;
+    }
+}
+
+@media screen and (max-width:800px){
+    .projectCards a{
+        height: 130px;
+        background-position: center !important;
+        background-size: cover;
+    }
+    .projects .kamoja .date{
+        font-size: 13px;
+    }
+}
+
+@media screen and (max-width:740px){
+    .projectCards a{
+        height: 120px;
+        background-position: center !important;
+        background-size: cover;
+    }
+    .projects .kamoja .date{
+        font-size: 12px;
+        padding: 5px !important;
+        height: 13px !important;
+    }
+}
+
+@media screen and (max-width:670px){
+    .projectCards a{
+        height: 110px;
+    }
+}
+
+@media screen and (max-width:640px){
+    .projectCards a{
+        height: 100px;
+        width: 98%;
+    }
+}
+
+@media screen and (max-width:580px){
+    .projectCards a{
+        height: 96px;
+        width: 98%;
+    }
+}
+
+@media screen and (max-width:550px){
+    .projects .projectCards{
+        grid-template-columns: repeat(2,1fr);
+    }
+    .projectCards a{
+        height: 130px;
+        width: 98%;
+    }
+}
+
+@media screen and (max-width:500px){
+    .projectCards a{
+        height: 120px;
+        width: 96%;
+    }
+}
+
+@media screen and (max-width:440px){
+    .projectCards a{
+        height: 120px;
+    }
+}
+
+@media screen and (max-width:420px){
+    .projectCards a{
+        height: 107px;
+    }
+}
+
+@media screen and (max-width:400px){
+    .ray h6{
+        width: 120%;
+    }
+    .ray p{
+        width: 120%;
+    }
+    .date{
+        font-size: 10px;
+    }
+    .projectCards a{
+        height: 100px;
+    }
+}
+
+@media screen and (max-width:380px){
+    .projectCards a{
+        height: 98px;
+        border-radius: 5px;
+    }
+    .projects .kamoja{
+        border-radius: 5px;
+    }
+    .projects .kamoja .date{
+        font-size: 9px;
+        padding: 5px !important;
+        height: 12px !important;
+    }
+    .ray h6{
+        font-size: 12px;
+        word-wrap: normal;
+    }
+}
+
+@media screen and (max-width:350px){
+    .projectCards a{
+        height: 94px;
+    }
+    .ray h6{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:330px){
+    .projectCards a{
+        height: 90px;
+    }
+    .ray h6{
+        font-size: 9px;
+    }
+}
+
+@media screen and (max-width:310px){
+    .projectCards a{
+        height: 85px;
+    }
+    .ray h6{
+        font-size: 8px;
+    }
+}
+
+@media screen and (max-width:290px){
+    .projects .projectCards{
+        grid-template-columns: repeat(1,1fr);
+    }
+    .projectCards a{
+        height: 130px;
+    }
+    .ray h6{
+        font-size: 10px;
+    }
+}
+
+@media screen and (max-width:240px){
+    .projectCards a{
+        height: 120px;
+    }
+}
+
+@media screen and (max-width:210px){
+    .projectCards a{
+        height: 8vh
+    }
+}
