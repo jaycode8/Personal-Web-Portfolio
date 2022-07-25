@@ -6,7 +6,8 @@ Responsive for all devices, built using HTML, CSS, JavaScript, Bootsrap and Reac
 
  </div>
 
-# www.jamesmumo.ml
+<!-- www.jamesmumo.ml -->
+<br/>
 
  <img src="https://raw.githubusercontent.com/jaycode8/Personal-Web-Portfolio/main/src/Components/About/Projects/img/jaymoh.png" />
 
