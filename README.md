@@ -2,6 +2,7 @@
  <h1>MY PERSONAL WEB PORTFOLIO</h1>
  <p>Fully responsive personal portfolio website,
 Responsive for all devices, built using HTML, CSS, JavaScript, Bootsrap and React Js</p>
+<a href="http://jamesmumo.ml/"><strong>➥ LiveDemo</strong></a>
 
  </div>
 
