@@ -23,6 +23,9 @@ Responsive for all devices, built using HTML, CSS, JavaScript, Bootsrap and Reac
  
  * [Git](https://git-scm.com/downloads "Download Git")
  * [Node js](https://nodejs.org/en/download/)
+ 
+ #### Run Online
+ Hit the LiveDemo button above
   
  #### Run Locally 
   
@@ -39,6 +42,17 @@ Responsive for all devices, built using HTML, CSS, JavaScript, Bootsrap and Reac
  ```bash 
  git clone https://github.com/jaycode8/Personal-Web-Portfolio.git
  ```
+ 
+ Run the web app in the terminal or cmd with
+ ```
+ npm start
+ ```
+
+
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
 ### License 
   
