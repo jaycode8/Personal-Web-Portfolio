@@ -19,8 +19,9 @@ Responsive for all devices, built using HTML, CSS, JavaScript, Bootsrap and Reac
 #### Prerequisites 
   
  Before you begin, ensure you have met the following requirements: 
-  
- * [Git](https://git-scm.com/downloads "Download Git") must be installed on your operating system. 
+ <p>The following packages must be installed in your system.</p>
+ 
+ * [Git](https://git-scm.com/downloads "Download Git")
  * [Node js](https://nodejs.org/en/download/)
   
  #### Run Locally 
