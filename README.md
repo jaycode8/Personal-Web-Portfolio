@@ -9,7 +9,7 @@ Responsive for all devices, built using HTML, CSS, JavaScript, Bootsrap and Reac
 <!-- www.jamesmumo.ml -->
 <br/>
 
- <img src="https://raw.githubusercontent.com/jaycode8/Personal-Web-Portfolio/main/src/Components/About/Projects/img/jaymoh.png" />
+ <img src="https://raw.githubusercontent.com/jaycode8/Personal-Web-Portfolio/main/src/Components/About/Projects/img/face.png" />
 
 <div align="center">
    <img src="https://img.badgesize.io/https://github.com/jaycode8/Personal-Web-Portfolio.git" style="plastic"  />
